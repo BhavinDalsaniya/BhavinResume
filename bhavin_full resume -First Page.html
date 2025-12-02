@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavin Dalsaniya - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: 30px auto;
+      padding: 40px 45px;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #1a5276;
+      margin-bottom: 5px;
+    }
+
+    .header {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .icon {
+      color: #3498db;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #1a5276;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      color: #2c3e50;
+      margin: 6px 0;
+    }
+
+    ul {
+      margin: 0 0 10px 20px;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      background: #eaf2f8;
+      color: #1b4f72;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    /* Skills inner columns */
+    .skills-columns {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    /* Project Section */
+    .projects-section {
+      margin-top: 40px;
+    }
+
+    .project {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-left: 5px solid #3498db;
+      padding: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .project-header {
+      background: #3498db;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .project-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .project-sidebar {
+      flex: 0 0 180px;
+      border-right: 1px solid #e0e0e0;
+      padding-right: 20px;
+      margin-right: 25px;
+    }
+
+    .project-sidebar p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .project-details {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .project-details h4 {
+      font-size: 15px;
+      color: #1a5276;
+      margin-bottom: 10px;
+      border-left: 4px solid #3498db;
+      padding-left: 8px;
+    }
+
+    .project-details ul {
+      margin-left: 18px;
+    }
+
+    .declaration {
+      margin-top: 30px;
+      font-size: 14px;
+      font-style: italic;
+      color: #555;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        margin: 0 auto;
+        padding: 20mm;
+        width: 170mm;
+      }
+
+      .page-break {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+
+      @media(max-width: 768px) {
+        .columns {
+          flex-direction: column;
+        }
+
+        .contact-info {
+          flex-direction: column;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bhavin Dalsaniya</h1>
+      <div class="contact-info">
+        <div><i class="fas fa-phone icon"></i>9537133864</div>
+        <div><i class="fas fa-envelope icon"></i>bhavindalsaniya5@gmail.com</div>
+        <div>
+          <i class="fab fa-linkedin icon"></i>
+          <a href="https://www.linkedin.com/in/bhavin-dalsaniya-230b08337/" target="_blank">
+            bhavin-dalsaniya
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2><i class="fas fa-bullseye icon"></i> Career Objective</h2>
+    <p>To secure a challenging position where I can effectively contribute my skills as a Software Professional.</p>
+
+    <h2><i class="fas fa-certificate icon"></i> Certifications</h2>
+    <div class="chips">
+      <span class="chip">ISTQB Foundation Level – 2023</span>
+      <span class="chip">Katalon Expert Level – 2023</span>
+    </div>
+
+    <h2><i class="fas fa-user-graduate icon"></i> Professional Summary</h2>
+    <ul>
+      <li><b>4 years</b> of hands-on experience in <b>Software Testing</b> with a focus on <b>Automation Testing</b> at
+        <b>Xceedance Consulting India Pvt. Ltd. (Pune)</b>.
+      </li>
+      <li>Comprehensive understanding of <b>SDLC</b>, <b>STLC</b>, <b>Agile</b> methodologies, and QA best practices for
+        web-based applications.</li>
+      <li>Proficient in automation tools including <b>Selenium WebDriver</b> with Java, <b>Katalon Studio</b>, and
+        <b>Playwright</b> with TypeScript for UI and functional automation.
+      </li>
+      <li>Developed and maintained modular, reusable, and scalable automation frameworks using <b>Page Object Model
+          (POM)</b>, fixtures, and custom helpers across multiple tools.</li>
+      <li>Strong expertise in identifying dynamic and complex web elements using <b>XPath</b>, <b>CSS Selectors</b>, and
+        Playwright locators.</li>
+      <li>Experienced in <b>API testing</b> using <b>Postman</b>, <b>Rest Assured</b>, and Playwright request context
+        with validation of JSON payloads and HTTP responses.</li>
+      <li>Executed <b>Regression</b>, <b>Smoke</b>, <b>Cross-Browser</b>, and <b>Parallel Testing</b> using TestNG,
+        Maven, Selenium Grid, and Playwright.</li>
+      <li>Integrated automation scripts with <b>CI/CD pipelines</b> using Jenkins and GitHub Actions for continuous
+        testing and nightly runs.</li>
+      <li>Analyzed business requirements, identified test scenarios, and optimized test coverage to improve overall
+        quality.</li>
+      <li>Collaborated with developers, QA, and business teams to ensure high-quality releases in <b>Agile sprint
+          cycles</b>.</li>
+      <li>Quick learner with the ability to adopt new tools, technologies, and frameworks to enhance automation
+        efficiency.</li>
+    </ul>
+
+    <!-- Skills Section with two columns -->
+    <h2><i class="fas fa-tools icon"></i> Skills</h2>
+    <div class="skills-columns">
+      <div class="skills-column">
+        <h3>Automation</h3>
+        <ul>
+          <li>Proficient in identifying, analyzing, and handling complex web element locators using Selenium WebDriver.
+          </li>
+          <li>Experienced in developing and maintaining Page Object Model (POM) based automation frameworks.</li>
+          <li>Skilled in executing parallel, batch, cross-browser, and group test executions using TestNG and Maven.
+          </li>
+          <li>Hands-on experience integrating automation test scripts with CI/CD pipelines using tools such as Jenkins
+            and GitHub Actions.</li>
+          <li>Responsible for creating, maintaining, and executing automated regression and functional test suites to
+            enhance test coverage and product quality.</li>
+        </ul>
+
+        <h3>Java</h3>
+        <ul>
+          <li>Strong understanding of Object-Oriented Programming (OOP) principles and design patterns.</li>
+          <li>Experienced with arrays, strings, collections, and generics for handling complex data structures.</li>
+          <li>Proficient in exception handling, debugging, and optimizing Java code for better performance.</li>
+          <li>Hands-on experience in writing reusable and modular code for test automation frameworks.</li>
+          <li>Good knowledge of Core Java concepts including inheritance, polymorphism, and abstraction.</li>
+        </ul>
+      </div>
+
+      <div class="skills-column">
+        <h3>TypeScript</h3>
+        <ul>
+          <li>Good understanding of modern TypeScript concepts.</li>
+          <li>Experienced in building UI automation frameworks using the Playwright Test Runner.</li>
+          <li>Developed reusable and maintainable page objects utilizing Playwright’s locator engine.</li>
+          <li>Handled API testing using Playwright’s request context for end-to-end validation.</li>
+          <li>Integrated Playwright test suites with CI/CD pipelines to enable continuous testing.</li>
+          <li>Implemented parallel test execution to reduce overall test runtime and improve efficiency.</li>
+        </ul>
+
+
+        <h3>API</h3>
+        <ul>
+          <li>Experienced in testing RESTful APIs using Postman and Katalon Studio.</li>
+          <li>Proficient with HTTP methods such as GET, POST, PUT, DELETE, and PATCH.</li>
+          <li>Validated JSON responses, status codes (200, 201, 401, 404, 500), and response time performance.</li>
+          <li>Strong understanding of request/response headers, parameters, and payload validation.</li>
+          <li>Experience integrating API tests into automation frameworks and CI/CD pipelines.</li>
+        </ul>
+      </div>
+    </div>
+</body>
+
+</html>
