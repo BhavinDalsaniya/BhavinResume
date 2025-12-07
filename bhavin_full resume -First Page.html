@@ -9,7 +9,7 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       background: #f4f6f8;
       margin: 0;
       color: #2c3e50;
@@ -18,35 +18,34 @@
     .container {
       max-width: 900px;
       background: #fff;
-      margin: 30px auto;
-      padding: 40px 45px;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+      margin: 20px auto;
+      padding: 28px 32px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 30px;
       color: #1a5276;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     .header {
-      text-align: left;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .contact-info {
       display: flex;
-      gap: 25px;
+      gap: 18px;
       flex-wrap: wrap;
-      font-size: 14px;
+      font-size: 13px;
       color: #555;
     }
 
     .contact-info div {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .icon {
@@ -54,174 +53,172 @@
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 18px;
       color: #1a5276;
-      border-left: 5px solid #3498db;
-      padding-left: 10px;
-      margin-top: 30px;
-      margin-bottom: 12px;
+      border-left: 4px solid #3498db;
+      padding-left: 8px;
+      margin: 22px 0 10px;
     }
 
     h3 {
       color: #2c3e50;
-      margin: 6px 0;
+      margin: 5px 0;
+      font-size: 15px;
     }
 
     ul {
-      margin: 0 0 10px 20px;
+      margin: 0 0 8px 18px;
       padding: 0;
-      line-height: 1.6;
-      color: #333;
-      font-size: 14px;
+      line-height: 1.5;
+      font-size: 13px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 13px;
       color: #444;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .chips {
+    /* .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
     .chip {
       background: #eaf2f8;
       color: #1b4f72;
-      padding: 4px 10px;
+      padding: 3px 9px;
       border-radius: 6px;
-      font-size: 13px;
-    }
+      font-size: 12px;
+    } */
 
+
+   .chips {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    background: #2f5770;
+    color: white;
+    padding: 6px 14px;
+    /* border-radius: 18px; */
+    font-size: 14px;
+    font-weight: 600;
+  }
     .columns {
       display: flex;
-      gap: 40px;
+      gap: 25px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .column {
       flex: 1;
-      min-width: 260px;
+      min-width: 240px;
     }
 
-    /* Skills inner columns */
     .skills-columns {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
     }
 
     .skills-column {
       flex: 1;
-      min-width: 200px;
+      min-width: 180px;
     }
 
     /* Project Section */
     .projects-section {
-      margin-top: 40px;
+      margin-top: 25px;
     }
 
     .project {
       background: #ffffff;
       border: 1px solid #e0e0e0;
-      border-left: 5px solid #3498db;
-      padding: 0;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-left: 4px solid #3498db;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
     }
 
     .project-header {
       background: #3498db;
       color: #fff;
-      padding: 10px 15px;
-      font-size: 17px;
+      padding: 6px 10px;
+      font-size: 14px;
       font-weight: 600;
     }
 
     .project-content {
       display: flex;
       flex-wrap: wrap;
-      padding: 20px;
+      padding: 15px;
     }
 
     .project-sidebar {
-      flex: 0 0 180px;
+      flex: 0 0 160px;
       border-right: 1px solid #e0e0e0;
-      padding-right: 20px;
-      margin-right: 25px;
+      padding-right: 15px;
+      margin-right: 20px;
     }
 
     .project-sidebar p {
-      margin: 6px 0;
-      font-size: 14px;
+      margin: 5px 0;
+      font-size: 13px;
     }
 
     .project-details {
       flex: 1;
-      min-width: 200px;
+      min-width: 180px;
     }
 
     .project-details h4 {
-      font-size: 15px;
+      font-size: 14px;
       color: #1a5276;
-      margin-bottom: 10px;
-      border-left: 4px solid #3498db;
-      padding-left: 8px;
+      margin-bottom: 8px;
+      border-left: 3px solid #3498db;
+      padding-left: 6px;
     }
 
     .project-details ul {
-      margin-left: 18px;
+      margin-left: 15px;
     }
 
     .declaration {
-      margin-top: 30px;
-      font-size: 14px;
+      margin-top: 20px;
+      font-size: 13px;
       font-style: italic;
       color: #555;
     }
 
+    /* Print */
     @media print {
       body {
         background: #fff;
-        width: 210mm;
-        height: 297mm;
         margin: 0;
-        padding: 0;
       }
 
       .container {
         box-shadow: none;
-        margin: 0 auto;
-        padding: 20mm;
-        width: 170mm;
+        margin: 0;
+        padding: 15mm;
+        width: auto;
       }
 
       .page-break {
         page-break-before: always;
-        break-before: page;
       }
 
       * {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
       }
-
-      @media(max-width: 768px) {
-        .columns {
-          flex-direction: column;
-        }
-
-        .contact-info {
-          flex-direction: column;
-        }
-      }
     }
   </style>
+
 </head>
 
 <body>
@@ -240,10 +237,10 @@
       </div>
     </div>
 
-    <h2><i class="fas fa-bullseye icon"></i> Career Objective</h2>
+    <h2><i class="fas fa-compass icon"></i> Career Objective</h2>
     <p>To secure a challenging position where I can effectively contribute my skills as a Software Professional.</p>
 
-    <h2><i class="fas fa-certificate icon"></i> Certifications</h2>
+    <h2><i class="fas fa-award icon"></i> Certifications</h2>
     <div class="chips">
       <span class="chip">ISTQB Foundation Level – 2023</span>
       <span class="chip">Katalon Expert Level – 2023</span>
@@ -257,10 +254,10 @@
       <li>Comprehensive understanding of <b>SDLC</b>, <b>STLC</b>, <b>Agile</b> methodologies, and QA best practices for
         web-based applications.</li>
       <li>Proficient in automation tools including <b>Selenium WebDriver</b> with Java, <b>Katalon Studio</b>, and
-        <b>Playwright</b> with TypeScript for UI and functional automation.
+        <b>Playwright</b> with TypeScript for functional automation.
       </li>
-      <li>Developed and maintained modular, reusable, and scalable automation frameworks using <b>Page Object Model
-          (POM)</b>, fixtures, and custom helpers across multiple tools.</li>
+      <li>Developed and maintained modular, reusable, and scalable automation frameworks using <b>POM</b>, fixtures, and
+        custom helpers across multiple tools.</li>
       <li>Strong expertise in identifying dynamic and complex web elements using <b>XPath</b>, <b>CSS Selectors</b>, and
         Playwright locators.</li>
       <li>Experienced in <b>API testing</b> using <b>Postman</b>, <b>Rest Assured</b>, and Playwright request context
@@ -277,7 +274,6 @@
         efficiency.</li>
     </ul>
 
-    <!-- Skills Section with two columns -->
     <h2><i class="fas fa-tools icon"></i> Skills</h2>
     <div class="skills-columns">
       <div class="skills-column">
@@ -290,13 +286,11 @@
           </li>
           <li>Hands-on experience integrating automation test scripts with CI/CD pipelines using tools such as Jenkins
             and GitHub Actions.</li>
-          <li>Responsible for creating, maintaining, and executing automated regression and functional test suites to
-            enhance test coverage and product quality.</li>
         </ul>
 
         <h3>Java</h3>
         <ul>
-          <li>Strong understanding of Object-Oriented Programming (OOP) principles and design patterns.</li>
+          <li>Strong understanding of OOP principles and design patterns.</li>
           <li>Experienced with arrays, strings, collections, and generics for handling complex data structures.</li>
           <li>Proficient in exception handling, debugging, and optimizing Java code for better performance.</li>
           <li>Hands-on experience in writing reusable and modular code for test automation frameworks.</li>
@@ -310,11 +304,9 @@
           <li>Good understanding of modern TypeScript concepts.</li>
           <li>Experienced in building UI automation frameworks using the Playwright Test Runner.</li>
           <li>Developed reusable and maintainable page objects utilizing Playwright’s locator engine.</li>
-          <li>Handled API testing using Playwright’s request context for end-to-end validation.</li>
-          <li>Integrated Playwright test suites with CI/CD pipelines to enable continuous testing.</li>
+          <li>Handled API testing using Playwright’s request for end-to-end validation.</li>
           <li>Implemented parallel test execution to reduce overall test runtime and improve efficiency.</li>
         </ul>
-
 
         <h3>API</h3>
         <ul>
@@ -326,6 +318,43 @@
         </ul>
       </div>
     </div>
-</body>
 
+      <div style="display: flex; gap: 20px; margin-top: 20px;">
+
+      <!-- LEFT COLUMN – Technical Exposure -->
+      <div style="flex: 1; min-width: 300px;">
+        <h2><i class="fas fa-laptop-code icon"></i> Technical Exposure</h2>
+        <ul>
+          <li><strong>Automation Tools:</strong> Selenium WebDriver, Katalon Studio, Playwright</li>
+          <li><strong>Programming Languages:</strong> Core Java, TypeScript</li>
+          <li><strong>Build & Dependency Management:</strong> Maven</li>
+          <li><strong>CI/CD Tools:</strong> Jenkins, Azure DevOps Pipeline, GitHub Actions</li>
+          <li><strong>Testing Frameworks:</strong> TestNG, Playwright Test Runner</li>
+          <li><strong>Version Control:</strong> Git</li>
+          <li><strong>Defect Tracking & Test Management:</strong> Jira, Azure DevOps</li>
+          <li><strong>API Testing Tools:</strong> Postman, Rest Assured</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN – Education + Personal Details -->
+      <div style="flex: 1; min-width: 300px;">
+
+        <!-- Education -->
+        <h2><i class="fas fa-graduation-cap icon"></i> Education</h2>
+        <p><strong>B.Tech – Dharmsinh Desai University, Gujarat (2018)</strong></p>
+
+
+        <!-- Personal Details -->
+        <h2><i class="fas fa-user icon"></i> Personal Details</h2>
+        <ul style="list-style: none; padding-left: 0; margin-left: 0;">
+          <li><strong>DOB:</strong> 09-May-1997</li>
+          <li><strong>Address:</strong> Pune</li>
+          <li><strong>Languages:</strong> English, Hindi, Gujarati</li>
+        </ul>
+
+
+
+      </div>
+    </div>
+</body>
 </html>

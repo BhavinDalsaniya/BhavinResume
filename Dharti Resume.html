@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dharti Amrutiya — Resume (A4 PDF)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #003366;
+        --secondary: #006699;
+        --text-dark: #1a1a1a;
+        --text-light: #555;
+        --bg: #f9fafc;
+        --card: #fff;
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      } /* Set A4 for printing */
+      @page {
+        size: A4;
+        margin: 20mm;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        -webkit-print-color-adjust: exact;
+        color: var(--text-dark);
+        line-height: 1.6;
+      } /* Each .page maps to one physical A4 page */
+      .page {
+        width: 210mm; /* A4 width */
+        min-height: 297mm; /* A4 height */
+        box-sizing: border-box;
+        padding: 20mm;
+        margin: 10mm auto;
+        background: var(--card);
+        border-radius: 6px;
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      } /* Force page break after each .page when printing */
+      .page {
+        page-break-after: always;
+      } /* Header (kept compact so it fits well on both pages) */
+      .resume-header {
+        text-align: center;
+        background: linear-gradient(135deg, #2b5876, #4e4376);
+        color: white;
+        padding: 18px 14px;
+        border-radius: 6px;
+      }
+      .resume-header h1 {
+        font-size: 1.6rem;
+        margin: 0 0 4px 0;
+        letter-spacing: 1px;
+      }
+      .resume-header h2 {
+        font-weight: 400;
+        font-size: 0.95rem;
+        margin: 0;
+        opacity: 0.95;
+      }
+      .contact {
+        margin-top: 8px;
+        font-size: 0.86rem;
+      }
+      .contact a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      } /* Main content columns and spacing */
+      .content {
+        margin-top: 14px;
+        display: block;
+        flex: 1 1 auto;
+      }
+      h3 {
+        font-size: 13px;
+        color: var(--primary);
+        border-bottom: 2px solid var(--secondary);
+        padding-bottom: 4px;
+        margin: 12px 0 8px;
+        text-transform: uppercase;
+      }
+      p,
+      ul {
+        font-size: 12.6px;
+        color: var(--text-dark);
+        margin: 6px 0;
+      }
+      ul {
+        margin-left: 18px;
+      }
+      .skills-tools-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .skills-tools-grid section {
+        background: #f9fbff;
+        border-radius: 6px;
+        padding: 10px 12px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+      }
+      .skill,
+      .tool {
+        display: inline-block;
+        background: #eef6fb;
+        color: var(--primary);
+        border-radius: 16px;
+        padding: 6px 10px;
+        font-size: 12px;
+        margin: 4px 6px 4px 0;
+        border: 1px solid #cce0ee;
+      } /* Experience styling */
+      .experience-item {
+        background: #f9fbff;
+        border-left: 4px solid #006699;
+        padding: 12px 14px;
+        border-radius: 6px;
+        margin-bottom: 14px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+      }
+      .job-title {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 13px;
+      }
+      .job-meta {
+        font-size: 12px;
+        color: var(--text-light);
+        margin-bottom: 6px;
+      }
+      .declaration {
+        font-size: 12.2px;
+        color: var(--text-light);
+        background: #f6f8fb;
+        padding: 12px;
+        border-top: 1px solid #e0e6ee;
+        border-radius: 6px;
+        margin-top: 8px;
+      } /* Keep footer small so content fits well on the page */
+      .page-footer {
+        font-size: 11px;
+        color: #666;
+        text-align: right;
+        margin-top: 8px;
+      }
+      p,
+      ul,
+      li {
+        font-size: 13.6px; /* increased by 1 point */
+        line-height: 1.8; /* extra spacing between lines */
+        color: var(--text-dark);
+        margin: 8px 0; /* more spacing between items */
+      }
+      ul {
+        margin-left: 20px;
+      } /* Responsive adjustments for screen preview */
+      @media (max-width: 900px) {
+        .page {
+          width: auto;
+          min-height: auto;
+          margin: 10px;
+          box-shadow: none;
+          border-radius: 0;
+        }
+        .skills-tools-grid {
+          grid-template-columns: 1fr;
+        }
+      } /* Print specific adjustments */
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          box-shadow: none;
+          border-radius: 0;
+          margin: 0;
+          padding: 20mm;
+        }
+        .page-footer {
+          display: none;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 1: Header + Objective + Summary + Skills/Tools + Education -->
+    <div class="page" id="page-1">
+      <header class="resume-header">
+        <h1>Dharti Amrutiya</h1>
+        <h2>Senior Software Developer</h2>
+        <div class="contact">
+          <span
+            ><i class="fa-solid fa-phone"></i>
+            <strong>+91 63517 69681</strong></span
+          >
+          &nbsp;|&nbsp;
+          <span
+            ><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:dhartiamrutiya1998@gmail.com"
+              >dhartiamrutiya1998@gmail.com</a
+            ></span
+          >
+          &nbsp;|&nbsp;
+          <span
+            ><i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/dharti-amrutiya"
+              target="_blank"
+              >Dharti_Amrutiya</a
+            ></span
+          >
+        </div>
+      </header>
+      <div class="content">
+        <section class="fullwidth-section">
+          <h3><i class="fa-solid fa-bullseye"></i> Career Objective</h3>
+          <p>
+            To utilize my skills in a challenging environment that provides me
+            with better opportunities for career development, satisfaction, and
+            professionalism.<br />
+          </p>
+        </section>
+        <section class="fullwidth-section">
+          <h3><i class="fa-solid fa-user-tie"></i> Professional Summary</h3>
+          <ul>
+            <li>
+              5 Years of experience in PHP Framework CodeIgniter and React JS.
+            </li>
+            <li>
+              Strong knowledge of MVC architecture and CodeIgniter libraries,
+              helpers, and plugins.
+            </li>
+            <li>
+              Extensive experience in database design and management using MySQL
+              and SQL triggers.
+            </li>
+            <li>
+              Strong problem-solving and debugging skills with detailed
+              documentation experience.
+            </li>
+            <li>
+              Developed and maintained user interfaces using React.js and
+              component-based architecture.
+            </li>
+            <li>
+              Proficient with React hooks (useState, useEffect) and lifecycle
+              methods.
+            </li>
+            <li>
+              Supportive and enthusiastic team player dedicated to streamlining
+              processes and efficiently resolving project issues.
+            </li>
+          </ul>
+        </section>
+        <div class="skills-tools-grid">
+          <section>
+            <h3><i class="fa-solid fa-code"></i> Skills</h3>
+            <div>
+              <span class="skill">HTML</span> <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">jQuery</span> <span class="skill">AJAX</span>
+              <span class="skill">PHP (CodeIgniter)</span>
+              <span class="skill">MVC Architecture</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">Mongo DB</span>
+              <span class="skill">React JS</span>
+              <span class="skill">Front-End Integration</span>
+            </div>
+          </section>
+          <section>
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+            <div>
+              <span class="tool">Webcalling 3CX</span>
+              <span class="tool">Visual Studio</span>
+              <span class="tool">Google Authorization</span>
+              <span class="tool">Cloud 9</span>
+              <span class="tool">Sublime</span> <span class="tool">SQL</span>
+              <span class="tool">GitHub</span>
+              <span class="tool">Click-up</span>
+              <span class="tool">Teams</span> <span class="tool">Postman</span>
+              <span class="tool">Cpanel</span>
+            </div>
+          </section>
+        </div>
+        <section style="margin-top: 12px">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <p>
+            <strong>B.Tech — Computer Science Engineering</strong> (2016 - 2020)
+          </p>
+        </section>
+      </div>
+      <div class="page-footer">Page 1 of 2</div>
+    </div>
+    <!-- PAGE 2: Header + Experience + Declaration -->
+    <div class="page" id="page-2">
+      <!-- <header class="resume-header"> <h1>Dharti Amrutiya</h1> <h2>Senior Software Developer</h2> <div class="contact"> <span><i class="fa-solid fa-phone"></i> <strong>+91 63517 69681</strong></span> &nbsp;|&nbsp; <span><i class="fa-solid fa-envelope"></i> <a href="mailto:dhartiamrutiya1998@gmail.com">dhartiamrutiya1998@gmail.com</a></span> &nbsp;|&nbsp; <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dharti-amrutiya" target="_blank">Dharti_Amrutiya</a></span> </div> </header> -->
+      <div class="content">
+        <section class="fullwidth-section">
+          <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+          <div class="experience-item">
+            <div class="job-title">
+              CRM Project — Yiron Technologies, Pune (Maharashtra)
+            </div>
+            <div class="job-meta">Nov 2024 – Present</div>
+            <ul>
+              <li>
+                CRM Software for Travel, Tourism & Hospitality Industry.
+                Implemented modules for Access Management, Marketing & Leads
+                Generation, Accounts, and Customer Management.
+              </li>
+              <li>
+                Integrated web-calling functionality within the Accounts and
+                Contacts module to enable direct communication through the
+                application.
+              </li>
+              <li>
+                Implemented secure Google sign-in and two-step verification
+                features to enhance user authentication and application
+                security.
+              </li>
+              <li>
+                <strong>Access Management:</strong> Role-based control over
+                business data, ensuring security and preventing unauthorized
+                access.
+              </li>
+              <li>
+                <strong>Marketing & Leads Generation:</strong> Helps businesses
+                attract and convert customers through targeted B2B & B2C
+                campaigns with multi-channel outreach via calls, emails, SMS,
+                and Wp.
+              </li>
+              <!-- <li><strong>Accounts & Customer Management:</strong> Simplifies client handling, billing, and financial tracking for travel businesses.</li> -->
+              <li>
+                <strong>Customer Relations Management (CRM):</strong> Enhances
+                engagement and loyalty through automated follow-ups,
+                personalized travel offers, and a 360° customer view.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <div class="job-title">
+              ERP Project — Innovative Software Development, Gandhidham
+              (Gujarat)
+            </div>
+            <div class="job-meta">Jan 2021 – Aug 2024</div>
+            <ul>
+              <li>
+                <strong>Architecture Design:</strong> Designed overall ERP
+                architecture with integrated modules.
+              </li>
+              <li>
+                <strong>Module Development:</strong> Built Shipping,
+                Transportation, Purchase, and Billing modules per requirements.
+              </li>
+              <li>
+                <strong>Shipping Module:</strong> Managed order processing,
+                inventory, and logistics.
+              </li>
+              <li>
+                <strong>Transportation Module:</strong> Managed scheduling,
+                vehicle tracking, and route optimization.
+              </li>
+              <li>
+                <strong>Purchase & Invoice:</strong> Automated purchase and
+                billing workflow with company branding.
+              </li>
+              <li>
+                <strong>Reporting:</strong> Created financial and performance
+                reports with real-time insights.
+              </li>
+              <li>
+                <strong>Tax Management:</strong> Handled GST and region-specific
+                tax rules dynamically.
+              </li>
+              <li>
+                <strong>Efficiency:</strong> Reduced manual errors and improved
+                operational transparency.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="declaration" style="margin-top: 8px">
+          <h3><i class="fa-solid fa-file-signature"></i> Declaration</h3>
+          <p>
+            I hereby declare that all the information provided above is true to
+            the best of my knowledge and belief.
+          </p>
+        </section>
+      </div>
+      <div class="page-footer">Page 2 of 2</div>
+    </div>
+  </body>
+</html>

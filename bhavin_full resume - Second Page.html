@@ -9,7 +9,7 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       background: #f4f6f8;
       margin: 0;
       color: #2c3e50;
@@ -18,35 +18,34 @@
     .container {
       max-width: 900px;
       background: #fff;
-      margin: 30px auto;
-      padding: 40px 45px;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+      margin: 20px auto;
+      padding: 28px 32px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 30px;
       color: #1a5276;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     .header {
-      text-align: left;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .contact-info {
       display: flex;
-      gap: 25px;
+      gap: 18px;
       flex-wrap: wrap;
-      font-size: 14px;
+      font-size: 13px;
       color: #555;
     }
 
     .contact-info div {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .icon {
@@ -54,193 +53,166 @@
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 18px;
       color: #1a5276;
-      border-left: 5px solid #3498db;
-      padding-left: 10px;
-      margin-top: 30px;
-      margin-bottom: 12px;
+      border-left: 4px solid #3498db;
+      padding-left: 8px;
+      margin: 22px 0 10px;
     }
 
     h3 {
       color: #2c3e50;
-      margin: 6px 0;
+      margin: 5px 0;
+      font-size: 15px;
     }
 
     ul {
-      margin: 0 0 10px 20px;
+      margin: 0 0 8px 18px;
       padding: 0;
-      line-height: 1.6;
-      color: #333;
-      font-size: 14px;
+      line-height: 1.5;
+      font-size: 13px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 13px;
       color: #444;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
     .chip {
       background: #eaf2f8;
       color: #1b4f72;
-      padding: 4px 10px;
+      padding: 3px 9px;
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .columns {
       display: flex;
-      gap: 40px;
+      gap: 25px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .column {
       flex: 1;
-      min-width: 260px;
+      min-width: 240px;
     }
 
-    /* Skills inner columns */
     .skills-columns {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
     }
 
     .skills-column {
       flex: 1;
-      min-width: 200px;
+      min-width: 180px;
     }
 
     /* Project Section */
     .projects-section {
-      margin-top: 40px;
+      margin-top: 25px;
     }
 
     .project {
       background: #ffffff;
       border: 1px solid #e0e0e0;
-      border-left: 5px solid #3498db;
-      padding: 0;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-left: 4px solid #3498db;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
     }
 
     .project-header {
       background: #3498db;
       color: #fff;
-      padding: 10px 15px;
-      font-size: 17px;
+      padding: 6px 10px;
+      font-size: 14px;
       font-weight: 600;
     }
 
     .project-content {
       display: flex;
       flex-wrap: wrap;
-      padding: 20px;
+      padding: 15px;
     }
 
     .project-sidebar {
-      flex: 0 0 180px;
+      flex: 0 0 160px;
       border-right: 1px solid #e0e0e0;
-      padding-right: 20px;
-      margin-right: 25px;
+      padding-right: 15px;
+      margin-right: 20px;
     }
 
     .project-sidebar p {
-      margin: 6px 0;
-      font-size: 14px;
+      margin: 5px 0;
+      font-size: 13px;
     }
 
     .project-details {
       flex: 1;
-      min-width: 200px;
+      min-width: 180px;
     }
 
     .project-details h4 {
-      font-size: 15px;
+      font-size: 14px;
       color: #1a5276;
-      margin-bottom: 10px;
-      border-left: 4px solid #3498db;
-      padding-left: 8px;
+      margin-bottom: 8px;
+      border-left: 3px solid #3498db;
+      padding-left: 6px;
     }
 
     .project-details ul {
-      margin-left: 18px;
+      margin-left: 15px;
     }
 
     .declaration {
-      margin-top: 30px;
-      font-size: 14px;
+      margin-top: 20px;
+      font-size: 13px;
       font-style: italic;
       color: #555;
     }
 
+    /* Print */
     @media print {
       body {
         background: #fff;
-        width: 210mm;
-        height: 297mm;
         margin: 0;
-        padding: 0;
       }
 
       .container {
         box-shadow: none;
-        margin: 0 auto;
-        padding: 20mm;
-        width: 170mm;
+        margin: 0;
+        padding: 15mm;
+        width: auto;
       }
 
       .page-break {
         page-break-before: always;
-        break-before: page;
       }
 
       * {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
       }
-
-      @media(max-width: 768px) {
-        .columns {
-          flex-direction: column;
-        }
-
-        .contact-info {
-          flex-direction: column;
-        }
-      }
     }
   </style>
+
 </head>
 
 <body>
   <div class="container">
 
-
-    <!-- Technical Exposure -->
-    <h2><i class="fas fa-laptop-code icon"></i> Technical Exposure</h2>
-    <ul>
-      <li><strong>Automation Tools:</strong> Selenium WebDriver, Katalon Studio, Playwright</li>
-      <li><strong>Programming Languages:</strong> Core Java, TypeScript</li>
-      <li><strong>Build & Dependency Management:</strong> Maven</li>
-      <li><strong>CI/CD Tools:</strong> Jenkins, Azure DevOps Pipeline, GitHub Actions</li>
-      <li><strong>Testing Frameworks:</strong> TestNG, Playwright Test Runner</li>
-      <li><strong>Version Control:</strong> Git</li>
-      <li><strong>Defect Tracking & Test Management:</strong> Jira, Azure DevOps</li>
-      <li><strong>API Testing Tools:</strong> Postman, Rest Assured</li>
-    </ul>
-
+    <!-- Two Column Layout: Technical Exposure (Left) | Education + Personal Details (Right) -->
+  
+    
     <!-- PROJECTS -->
     <div class="projects-section">
       <h2><i class="fas fa-briefcase icon"></i> Projects</h2>
@@ -267,15 +239,9 @@
               <li>Integrated Allure/HTML reports to provide detailed execution insights and traceability.</li>
               <li>Worked with developers and BAs to prioritize high-value automation scenarios.</li>
             </ul>
-
-
           </div>
         </div>
       </div>
-
-
-
-
 
       <!-- Project 2 -->
       <div class="project">
@@ -292,14 +258,11 @@
               <li>Designed and maintained modular, reusable test cases, suites, and custom keywords.</li>
               <li>Automated end-to-end regression scenarios using Web UI, API, and data-driven testing.</li>
               <li>Handled complex web elements using dynamic locators, XPath, and CSS strategies.</li>
-              <li>Integrated Katalon executions with CI/CD pipelines via Jenkins and GitHub Actions.</li>
               <li>Performed API testing using Katalon request/response handling and validations.</li>
               <li>Generated and analyzed reports, logs, and screenshots to identify defect root causes.</li>
               <li>Parameterized test data with Excel, CSV, and internal sources for scalable coverage.</li>
-              <li>Used Katalon TestOps for reporting, analytics, and execution management.</li>
               <li>Collaborated with QA, development, and product teams to optimize scenarios and test coverage.</li>
             </ul>
-
           </div>
         </div>
       </div>
@@ -325,32 +288,11 @@
               </li>
               <li>Configured parallel and cross-browser execution using TestNG and Selenium Grid.</li>
               <li>Integrated Selenium scripts with CI/CD pipelines via Jenkins for continuous testing.</li>
-              <li>Generated detailed HTML and Allure reports for analysis and defect tracking.</li>
-              <li>Collaborated with developers and QA teams to identify automation-ready scenarios.</li>
               <li>Performed root cause analysis, logged defects in Jira, and ensured timely resolution.</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Education and Personal Details Row -->
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-
-      <!-- Education Column -->
-      <div style="flex: 1; min-width: 200px;">
-        <h2><i class="fas fa-graduation-cap icon"></i> Education</h2>
-        <p>B.Tech – Dharmsinh Desai University, Gujarat (2018)</p>
-      </div>
-
-      <!-- Personal Details Column -->
-      <div style="flex: 1; min-width: 200px;">
-        <h2><i class="fas fa-user icon"></i> Personal Details</h2>
-        <p><strong>DOB:</strong> 09-05-1997</p>
-        <p><strong>Address:</strong> Pune</p>
-        <p><strong>Languages:</strong> English, Hindi, Gujarati</p>
-      </div>
-
     </div>
 
     <!-- Declaration Row -->
